@@ -136,6 +136,7 @@ p {
 .one, .two, .three {
     width: 90%;
     margin: auto;
+    padding: 1em;
     display: inline-block;
 }
 .herone {
