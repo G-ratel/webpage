@@ -12,17 +12,27 @@
         <div class="navlogo">
             <h1>G.ratel Clothing</h1>
         </div>
-        <div class="toggle">
-            <a id="hamburger"><img src="img/icon-hamburger.svg" alt="icon-hamburger"></a>
-            <!-- <button><img src="img/icon-hamburger.svg" alt="icon-hamburger"></button> -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="#appointment">Book an Appointment</a>
+                <a href="login.html"><i class="fa fa-fw fa-user"></i>Log In</a>
+            </div>
         </div>
+        <div class="cart">
+            <a href="#"><img src="img/icon-cart.png" alt="shop-cart-icon" height="30" width="40"></a>
+        </div>
+        <span style="color: white; font-size:30px; cursor:pointer;" onclick="openNav()">&#9776;</span>
         <div class="navbar" id="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#appointment">Book an Appointment</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li><a href="#appointment">Book Appointment</a></li>
+                <li><a href="login.html"><i class="fa fa-fw fa-user"></i>Log In</a></li>
                 <li><a href="#"><img src="img/icon-cart.png" alt="shop-cart-icon" height="30" width="40"></a></li>
             </ul>
         </div>

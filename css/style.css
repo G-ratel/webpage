@@ -28,14 +28,11 @@ nav {
     flex-wrap: wrap;
 }
 .navlogo {
-    width: 80%;
+    width: 60%;
 }
 .navlogo h1 {
     max-width: 100%;
     color: white;
-}
-.toggle {
-    text-align: right;
 }
 .navbar {
     display: none;
@@ -48,9 +45,6 @@ nav {
     .navlogo h1 {
         max-width: 100%;
         font-size: 25px;
-    }
-    .toggle {
-        display: none;
     }
     .navbar {
         display: block;
@@ -77,6 +71,66 @@ nav {
 @media only screen and (min-width: 1017px) {
 	.navlogo h1 {
         font-size: 30px;
+    }
+}
+.cart {
+    padding: 7px 7px;
+}
+nav span {
+    padding: 0 7px;
+}
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.2s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .overlay a {
+    padding: 4px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #818181;
+    display: block;
+    transition: 0.2s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  @media only screen and (min-width: 850px) {
+	nav span, .cart {
+        display: none;
     }
 }
 main {
@@ -253,7 +307,7 @@ p {
 	}
 }
 .container form{
-    width: 100%;
+    width: 90%;
     height: 100%;
     margin: auto;
     padding-top: 7em;
@@ -296,10 +350,10 @@ p {
       border-radius: 5px;
       padding: 20px;
     }
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 850px) {
       .container {
           margin: auto;
-          width: 40%;
+          width: 50%;
           background-color: whitesmoke;
           padding: 5% 5%;
       }
